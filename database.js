@@ -2,6 +2,7 @@ import {initializeApp} from "firebase/app";
 import { getDatabase, ref, set } from "firebase/database";
 
 
+
 (function(){
 
 // Your web app's Firebase configuration
@@ -18,20 +19,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-function writeUserData(userId, name, email, imageUrl) {
-    // Handle on Firebase db
-    const db = getDatabase();
-    // Reference
-    const reference = ref(db, 'users/' + userId);
 
-    set(reference, {
-        username: name,
-        email: email,
-        profile_picture: imageUrl
-    });
-}
-
-writeUserData("dianaazb", "diana", "diana@gmail.com", "myimageUrl");
+// Handle on Firebase db
+const db = getDatabase();
 
 
 // Get elements
