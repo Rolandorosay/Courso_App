@@ -2,7 +2,6 @@ import {initializeApp} from "firebase/app";
 import { getDatabase, ref, set } from "firebase/database";
 
 
-
 (function(){
 
 // Your web app's Firebase configuration
