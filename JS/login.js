@@ -1,3 +1,8 @@
+import { GoogleAuthProvider } from "firebase/auth";
+
+const provider = new GoogleAuthProvider();
+
+
 (function () {
 
 // Your web app's Firebase configuration
