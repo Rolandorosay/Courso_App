@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!--
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    -->
+    
+</head>
+
+<input id="message" type="text" placeholder="Text to write to DB"><br>
+<button id="write">Write</button>
+<button id="read">Read</button>
+<br>
+<div id="status"></div>
+<body>
+
+<script type="module" src="database.js">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBAdgb3Kx4es-L8igRQ2iCb8rb9A4EpKiA",
+      authDomain: "courso-d1968.firebaseapp.com",
+      databaseURL: "https://courso-d1968-default-rtdb.firebaseio.com",
+      projectId: "courso-d1968",
+      storageBucket: "courso-d1968.appspot.com",
+      messagingSenderId: "1087897474771",
+      appId: "1:1087897474771:web:237a5bc9fe9830dde76626"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
